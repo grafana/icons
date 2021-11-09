@@ -150,4 +150,4 @@ mono/grafana
 mono/heart
 mono/heart-break
 mono/panel-add
-mono/reusable-panel
+mono/library-panel
