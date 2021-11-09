@@ -1,12 +1,8 @@
-* Grafana Icons
+= Grafana Icons
 
 This is a repository that manages the icons used in grafana
 
 
-=== update list
-```
-go run cmd/buildindex/main.go
-```
 
 === generate bundle
 
