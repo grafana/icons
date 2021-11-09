@@ -133,6 +133,7 @@ unicons/percentage
 unicons/shield-exclamation
 unicons/plus-square
 unicons/x
+unicons/capure
 custom/gf-grid
 custom/gf-landscape
 custom/gf-layout-simple
