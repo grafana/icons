@@ -152,3 +152,4 @@ mono/heart
 mono/heart-break
 mono/panel-add
 mono/library-panel
+unicons/record-audio
