@@ -153,3 +153,9 @@ mono/heart-break
 mono/panel-add
 mono/library-panel
 unicons/record-audio
+unicons/horizontal-align-left
+unicons/horizontal-align-right
+unicons/horizontal-align-center
+unicons/vertical-align-top
+unicons/vertical-align-bottom
+unicons/vertical-align-center
