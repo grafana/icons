@@ -102,6 +102,7 @@ unicons/signal
 unicons/signin
 unicons/signout
 unicons/sitemap
+unicons/shape
 unicons/slack
 unicons/sliders-v-alt
 unicons/sort-amount-down
@@ -146,6 +147,7 @@ custom/gf-interpolation-smooth
 custom/gf-interpolation-step-after
 custom/gf-interpolation-step-before
 custom/gf-logs
+custom/group
 mono/favorite
 mono/grafana
 mono/heart
