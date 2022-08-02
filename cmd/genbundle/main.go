@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// import u001 from '!!raw-loader!../../../../../public/img/icons/unicons/angle-double-down.svg';
+// import u001 from '../../../../../public/img/icons/unicons/angle-double-down.svg';
 
 // cacheItem(u001, unicons, 'angle-double-down');
 
@@ -49,7 +49,7 @@ function cacheItem(content: string, path: string) {
 			line += ".svg"
 		}
 
-		fmt.Printf("import u%d from '!!raw-loader!../../../../../public/img/icons/%s';\n", count, line)
+		fmt.Printf("import u%d from '../../../../../public/img/icons/%s';\n", count, line)
 		items = append(items, fmt.Sprintf("  cacheItem(u%d, '%s');", count, line))
 	}
 	if err := scanner.Err(); err != nil {
