@@ -27,7 +27,7 @@ func main() {
 import { cacheStore } from 'react-inlinesvg';
 
 export let cacheInitialized = false;
-export let iconRoot = 'public/img/icons';
+export let iconRoot = 'public/img/icons/';
 
 function cacheItem(content: string, path: string) {
 	cacheStore[iconRoot + path] = { content, status: 'loaded', queue: [] };
