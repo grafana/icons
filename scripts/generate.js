@@ -44,12 +44,13 @@ fs.readdir(svgDir, (err, files) => {
           svgCode,
           {
             plugins: [
-              // "@svgr/plugin-svgo",
+              "@svgr/plugin-svgo",
               "@svgr/plugin-jsx",
               "@svgr/plugin-prettier",
             ],
             icon: true,
             typescript: true,
+            dimensions: false,
           },
           { componentName },
         )
