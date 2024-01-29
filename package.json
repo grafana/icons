@@ -4,5 +4,8 @@
   "description": "Icons for Grafana",
   "repository": "https://github.com/grafana/icons.git",
   "author": "Grafana Labs",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@svgr/core": "^8.1.0"
+  }
 }
