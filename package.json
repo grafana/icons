@@ -5,11 +5,20 @@
   "repository": "https://github.com/grafana/icons.git",
   "author": "Grafana Labs",
   "license": "Apache-2.0",
+  "scripts": {
+    "icons:create": "npx @svgr/cli -d ./src/components/icons ./svg/solid --template ./templates/icon.js"
+  },
   "devDependencies": {
+    "@emotion/css": "^11.11.2",
+    "@svgr/cli": "^8.1.0",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
     "@svgr/plugin-prettier": "^8.1.0",
     "@svgr/plugin-svgo": "^8.1.0",
     "prettier": "^3.2.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
