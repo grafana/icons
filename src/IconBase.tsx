@@ -1,5 +1,4 @@
 import React, { SVGProps, forwardRef } from "react";
-import { cx, css } from "@emotion/css";
 
 export type IconSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
 
@@ -25,30 +24,30 @@ function getSvgSize(size: IconSize) {
 }
 
 export const IconBase = forwardRef<SVGSVGElement, IconProps>(
-  ({ color, title, size = "md", className, ...props }, ref) => {
+  (
+    { color = "currentColor", title, size = "md", className, ...props },
+    ref,
+  ) => {
     const svgSize = getSvgSize(size);
-
+console.log('test', color);
     return (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill={color || "currentColor"}
         height={svgSize}
         width={svgSize}
-        className={cx(
-          css({
-            display: "inline-block",
-            fill: "currentColor",
-            flexShrink: 0,
-            label: "Icon",
-            lineHeight: 0,
-            verticalAlign: "middle",
-          }),
-          className,
-        )}
+        style={{
+          display: "inline-block",
+          fill: color,
+          flexShrink: 0,
+          lineHeight: 0,
+          verticalAlign: "middle",
+        }}
+        className={className}
         {...props}
       >
+        {title && <title>{title}</title>}
         {props.children}
       </svg>
     );
