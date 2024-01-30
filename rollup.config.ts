@@ -24,11 +24,6 @@ export default [
         sourcemap: true,
         dir: path.dirname(pkg.publishConfig.module),
         preserveModules: true,
-        // preserveModulesRoot: path.join(
-        //   // @ts-expect-error (TS cannot assure that `process.env.PROJECT_CWD` is a string)
-        //   process.env.PROJECT_CWD,
-        //   `icons/src`,
-        // ),
       },
     ],
   },
