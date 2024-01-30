@@ -1025,7 +1025,6 @@ export { default as Smile } from "./Smile";
 export { default as SnapchatAlt } from "./SnapchatAlt";
 export { default as SnapchatGhost } from "./SnapchatGhost";
 export { default as SnapchatSquare } from "./SnapchatSquare";
-export { default as SnowFlake } from "./SnowFlake";
 export { default as SnowflakeAlt } from "./SnowflakeAlt";
 export { default as Snowflake } from "./Snowflake";
 export { default as SocialDistancing } from "./SocialDistancing";
