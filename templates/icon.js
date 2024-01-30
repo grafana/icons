@@ -29,7 +29,7 @@ const comments = `
 // Run yarn icons:create to update
 // Do not edit
 `;
-const extraImports = `import { IconBase } from '../IconBase'`;
+const extraImports = `import { IconBase } from '../../IconBase'`;
 const template = ({ imports, props, exports, jsx, componentName }, { tpl }) => {
   return tpl`
 ${comments}
