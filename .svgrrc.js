@@ -1,6 +1,7 @@
 module.exports = {
   icon: true,
   typescript: true,
-  titleProp: true,
   jsxRuntime: "automatic",
+  outDir: "./src/icons",
+  index: true,
 };

@@ -31,7 +31,7 @@ const comments = `
 `;
 const imports = `
 import React from "react"
-import { IconBase, IconProps } from '../../IconBase'
+import { IconBase, IconProps } from '../IconBase'
 `;
 const template = ({ exports, jsx, componentName }, { tpl }) => {
   return tpl`
