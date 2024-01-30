@@ -1,0 +1,15 @@
+{
+  "extends": ["@grafana/tsconfig/base.json"],
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "allowJs": false,
+    "strict": true,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": true,
+    "incremental": true,
+    "preserveSymlinks": true,
+    "lib": ["es2021", "dom"],
+  },
+  "exclude": ["node_modules", "dist"]
+}
