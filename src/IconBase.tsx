@@ -1,4 +1,4 @@
-import React, { SVGProps, forwardRef } from "react";
+import React, { SVGProps } from "react";
 
 export type IconSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
 
@@ -23,33 +23,33 @@ function getSvgSize(size: IconSize) {
   return sizeMap[size] || 16;
 }
 
-export const IconBase = forwardRef<SVGSVGElement, IconProps>(
-  (
-    { color = "currentColor", title, size = "md", className, ...props },
-    ref,
-  ) => {
-    const svgSize = getSvgSize(size);
+export const IconBase = ({
+  color = "currentColor",
+  title,
+  size = "md",
+  className,
+  ...props
+}: IconProps) => {
+  const svgSize = getSvgSize(size);
 
-    return (
-      <svg
-        ref={ref}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        height={svgSize}
-        width={svgSize}
-        style={{
-          display: "inline-block",
-          fill: color,
-          flexShrink: 0,
-          lineHeight: 0,
-          verticalAlign: "middle",
-        }}
-        className={className}
-        {...props}
-      >
-        {title && <title>{title}</title>}
-        {props.children}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      height={svgSize}
+      width={svgSize}
+      style={{
+        display: "inline-block",
+        fill: color,
+        flexShrink: 0,
+        lineHeight: 0,
+        verticalAlign: "middle",
+      }}
+      className={className}
+      {...props}
+    >
+      {title && <title>{title}</title>}
+      {props.children}
+    </svg>
+  );
+};
