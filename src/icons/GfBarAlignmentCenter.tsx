@@ -1,10 +1,13 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgGfBarAlignmentCenter = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgGfBarAlignmentCenter = (
+  props: IconProps,
+  ref: ForwardedRef<SVGSVGElement>
+) => (
+  <IconBase {...props} ref={ref}>
     <g transform="translate(2.5)">
       <circle cx={6.67} cy={2.67} r={2.67} />
       <path d="M11.5 18.16V3.5H0V2h13v16.16z" />
@@ -12,4 +15,5 @@ const SvgGfBarAlignmentCenter = (props: IconProps) => (
     </g>
   </IconBase>
 );
-export default SvgGfBarAlignmentCenter;
+const ForwardRef = forwardRef(SvgGfBarAlignmentCenter);
+export default ForwardRef;

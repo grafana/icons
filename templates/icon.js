@@ -1,7 +1,7 @@
 /**
  * Modify the JSX to use the IconBase component as a wrapper
  */
-const modifyJSX = (jsx) => {
+const modifyJSX = (jsx, props) => {
   jsx.openingElement = {
     type: "JSXOpeningElement",
     name: {
@@ -16,12 +16,38 @@ const modifyJSX = (jsx) => {
           name: "props",
         },
       },
+      {
+        type: "JSXAttribute",
+        name: { type: "JSXIdentifier", name: "ref" },
+        value: {
+          type: "JSXExpressionContainer",
+          expression: { type: "Identifier", name: "ref" },
+        },
+      },
     ],
     selfClosing: false,
   };
 
   jsx.closingElement.name.name = "IconBase";
-  return jsx;
+
+  // Use IconProps as the type for props
+  props[0] = {
+    type: "Identifier",
+    name: "props",
+    typeAnnotation: {
+      type: "TSTypeAnnotation",
+      typeAnnotation: {
+        type: "TSTypeReference",
+        typeName: {
+          type: "Identifier",
+          name: "IconProps",
+        },
+      },
+    },
+  };
+
+  props[1].typeAnnotation.typeAnnotation.typeName.name = "ForwardedRef";
+  return [jsx, props];
 };
 
 const comments = `
@@ -30,16 +56,17 @@ const comments = `
 // Do not edit
 `;
 const imports = `
-import React from "react"
+import React, { forwardRef, ForwardedRef } from "react"
 import { IconBase, IconProps } from '../IconBase'
 `;
-const template = ({ exports, jsx, componentName }, { tpl }) => {
+const template = ({ exports, jsx, componentName, props }, { tpl }) => {
+  const [modifiedJsx, modifiedProps] = modifyJSX(jsx, props);
   return tpl`
 ${comments}
 ${imports} 
 
-const ${componentName} = (props: IconProps) => (
-  ${modifyJSX(jsx)}
+const ${componentName} = (${modifiedProps}) => (
+  ${modifiedJsx}
 );
 
 ${exports};

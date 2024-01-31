@@ -1,10 +1,13 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgGfServiceAccount = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgGfServiceAccount = (
+  props: IconProps,
+  ref: ForwardedRef<SVGSVGElement>
+) => (
+  <IconBase {...props} ref={ref}>
     <path
       fill="inherit"
       fillRule="evenodd"
@@ -13,4 +16,5 @@ const SvgGfServiceAccount = (props: IconProps) => (
     />
   </IconBase>
 );
-export default SvgGfServiceAccount;
+const ForwardRef = forwardRef(SvgGfServiceAccount);
+export default ForwardRef;

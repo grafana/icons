@@ -1,11 +1,12 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgMapPin = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgMapPin = (props: IconProps, ref: ForwardedRef<SVGSVGElement>) => (
+  <IconBase {...props} ref={ref}>
     <path d="M16.37 12.79a1 1 0 0 0-.74 1.86C17.09 15.23 18 16.13 18 17c0 1.42-2.46 3-6 3s-6-1.58-6-3c0-.87.91-1.77 2.37-2.35a1 1 0 0 0-.74-1.86C5.36 13.69 4 15.26 4 17c0 2.8 3.51 5 8 5s8-2.2 8-5c0-1.74-1.36-3.31-3.63-4.21M11 9.86V17a1 1 0 0 0 2 0V9.86a4 4 0 1 0-2 0M12 4a2 2 0 1 1-2 2 2 2 0 0 1 2-2" />
   </IconBase>
 );
-export default SvgMapPin;
+const ForwardRef = forwardRef(SvgMapPin);
+export default ForwardRef;

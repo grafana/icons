@@ -4,4 +4,5 @@ module.exports = {
   jsxRuntime: "automatic",
   outDir: "./src/icons",
   index: true,
+  ref: true,
 };

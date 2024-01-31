@@ -1,10 +1,10 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgGfTraces = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgGfTraces = (props: IconProps, ref: ForwardedRef<SVGSVGElement>) => (
+  <IconBase {...props} ref={ref}>
     <path
       stroke="#CCCCDC"
       strokeLinecap="round"
@@ -24,4 +24,5 @@ const SvgGfTraces = (props: IconProps) => (
     />
   </IconBase>
 );
-export default SvgGfTraces;
+const ForwardRef = forwardRef(SvgGfTraces);
+export default ForwardRef;

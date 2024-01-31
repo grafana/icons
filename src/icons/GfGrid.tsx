@@ -1,10 +1,10 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgGfGrid = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgGfGrid = (props: IconProps, ref: ForwardedRef<SVGSVGElement>) => (
+  <IconBase {...props} ref={ref}>
     <path
       fill="inherit"
       fillRule="evenodd"
@@ -19,4 +19,5 @@ const SvgGfGrid = (props: IconProps) => (
     />
   </IconBase>
 );
-export default SvgGfGrid;
+const ForwardRef = forwardRef(SvgGfGrid);
+export default ForwardRef;

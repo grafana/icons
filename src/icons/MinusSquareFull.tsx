@@ -1,11 +1,15 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgMinusSquareFull = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgMinusSquareFull = (
+  props: IconProps,
+  ref: ForwardedRef<SVGSVGElement>
+) => (
+  <IconBase {...props} ref={ref}>
     <path d="M9 13h6a1 1 0 0 0 0-2H9a1 1 0 0 0 0 2M21 2H3a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1m-1 18H4V4h16Z" />
   </IconBase>
 );
-export default SvgMinusSquareFull;
+const ForwardRef = forwardRef(SvgMinusSquareFull);
+export default ForwardRef;

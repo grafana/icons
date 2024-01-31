@@ -1,10 +1,10 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgGfMl = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgGfMl = (props: IconProps, ref: ForwardedRef<SVGSVGElement>) => (
+  <IconBase {...props} ref={ref}>
     <defs>
       <linearGradient
         id="gf-ml_svg__a"
@@ -29,4 +29,5 @@ const SvgGfMl = (props: IconProps) => (
     </g>
   </IconBase>
 );
-export default SvgGfMl;
+const ForwardRef = forwardRef(SvgGfMl);
+export default ForwardRef;

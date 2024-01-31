@@ -1,10 +1,13 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgGfMovepaneRight = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgGfMovepaneRight = (
+  props: IconProps,
+  ref: ForwardedRef<SVGSVGElement>
+) => (
+  <IconBase {...props} ref={ref}>
     <path
       d="M21 2H3c-.549 0-1 .451-1 1v18c0 .549.451 1 1 1h18c.549 0 1-.451 1-1V3c0-.549-.451-1-1-1m-7 18H4V4h10zm6 0h-4V4h4z"
       style={{
@@ -20,4 +23,5 @@ const SvgGfMovepaneRight = (props: IconProps) => (
     />
   </IconBase>
 );
-export default SvgGfMovepaneRight;
+const ForwardRef = forwardRef(SvgGfMovepaneRight);
+export default ForwardRef;

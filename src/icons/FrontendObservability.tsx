@@ -1,10 +1,13 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgFrontendObservability = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgFrontendObservability = (
+  props: IconProps,
+  ref: ForwardedRef<SVGSVGElement>
+) => (
+  <IconBase {...props} ref={ref}>
     <path
       fill="currentColor"
       fillRule="evenodd"
@@ -19,4 +22,5 @@ const SvgFrontendObservability = (props: IconProps) => (
     />
   </IconBase>
 );
-export default SvgFrontendObservability;
+const ForwardRef = forwardRef(SvgFrontendObservability);
+export default ForwardRef;

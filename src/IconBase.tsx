@@ -29,7 +29,7 @@ export const IconBase = forwardRef<SVGSVGElement, IconProps>(
     ref,
   ) => {
     const svgSize = getSvgSize(size);
-console.log('test', color);
+
     return (
       <svg
         ref={ref}

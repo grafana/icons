@@ -1,10 +1,10 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgAi = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgAi = (props: IconProps, ref: ForwardedRef<SVGSVGElement>) => (
+  <IconBase {...props} ref={ref}>
     <path
       fill="url(#ai_svg__a)"
       d="M7.5 5C5.567 5 4 7.015 4 9.5 4 7.015 2.433 5 .5 5 2.433 5 4 2.986 4 .5 4 2.986 5.567 5 7.5 5"
@@ -60,4 +60,5 @@ const SvgAi = (props: IconProps) => (
     </defs>
   </IconBase>
 );
-export default SvgAi;
+const ForwardRef = forwardRef(SvgAi);
+export default ForwardRef;

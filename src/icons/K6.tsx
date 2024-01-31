@@ -1,10 +1,10 @@
 // Auto-generated file created by svgr-cli
 // Run yarn icons:create to update
 // Do not edit
-import React from "react";
+import React, { forwardRef, ForwardedRef } from "react";
 import { IconBase, IconProps } from "../IconBase";
-const SvgK6 = (props: IconProps) => (
-  <IconBase {...props}>
+const SvgK6 = (props: IconProps, ref: ForwardedRef<SVGSVGElement>) => (
+  <IconBase {...props} ref={ref}>
     <path
       fill="none"
       stroke="currentColor"
@@ -17,4 +17,5 @@ const SvgK6 = (props: IconProps) => (
     />
   </IconBase>
 );
-export default SvgK6;
+const ForwardRef = forwardRef(SvgK6);
+export default ForwardRef;
