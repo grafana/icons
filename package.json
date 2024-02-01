@@ -6,6 +6,7 @@
   "author": "Grafana Labs",
   "license": "Apache-2.0",
   "scripts": {
+    "icons:clean": "rm -rf ./src/icons",
     "icons:create": "npx @svgr/cli ./svg --template ./templates/icon.js",
     "build": "tsc -p ./tsconfig.build.json && rollup -c rollup.config.ts --configPlugin typescript"
   },
