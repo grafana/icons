@@ -1,3 +1,6 @@
+/**
+ * Reference: https://react-svgr.com/docs/options/
+ */
 module.exports = {
   icon: true,
   typescript: true,
