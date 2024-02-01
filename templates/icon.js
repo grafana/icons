@@ -28,7 +28,7 @@ const imports = `
 import React from "react"
 import { IconBase, IconProps } from '../IconBase'
 `;
-const template = ({ exports, jsx, componentName, props }, { tpl }) => {
+const template = ({ exports, jsx, componentName }, { tpl }) => {
   return tpl`
 ${comments}
 ${imports} 

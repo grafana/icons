@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "icons:clean": "rm -rf ./src/icons",
-    "icons:create": "npx @svgr/cli ./svg --template ./templates/icon.js",
+    "icons:create": "npx @svgr/cli ./svg",
     "build": "tsc -p ./tsconfig.build.json && rollup -c rollup.config.ts --configPlugin typescript"
   },
   "main": "src/index.ts",

@@ -6,5 +6,5 @@ module.exports = {
   typescript: true,
   jsxRuntime: "automatic",
   outDir: "./src/icons",
-  index: true,
+  template: require("./templates/icon"),
 };
