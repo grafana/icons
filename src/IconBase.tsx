@@ -4,7 +4,7 @@ export type IconSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
 
 export interface IconProps
   extends Omit<SVGProps<SVGSVGElement>, "onLoad" | "onError" | "ref"> {
-  /** Size  of the icon. Defaults to "md" */
+  /** Size (width and height) of the icon. Defaults to "md" or 16x16px */
   size?: IconSize;
   /** Render the title element with the provided text.
    * More info: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/title
