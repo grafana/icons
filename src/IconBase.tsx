@@ -29,10 +29,10 @@ function getSvgSize(size: IconSize) {
 }
 
 export const IconBase = ({
-  color = "currentColor",
   title,
-  size = "md",
   className,
+  size = "md",
+  color = "currentColor",
   ...props
 }: IconProps) => {
   const svgSize = getSvgSize(size);
